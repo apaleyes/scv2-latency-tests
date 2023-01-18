@@ -1,0 +1,7 @@
+{
+    "name": "add10",
+    "implementation": "model.Add10",
+    "parameters": {
+        "version": "v0.0.1"
+    }
+}

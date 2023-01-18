@@ -1,0 +1,7 @@
+{
+    "name": "test-caller",
+    "implementation": "model.Caller",
+    "parameters": {
+        "version": "v0.0.1"
+    }
+}
