@@ -1,0 +1,19 @@
+name: "test-caller"
+backend: "python"
+
+input [
+  {
+    name: "INPUT"
+    data_type: TYPE_FP64
+    dims: [ 1 ]
+  }
+]
+output [
+  {
+    name: "OUTPUT"
+    data_type: TYPE_FP64
+    dims: [ 1 ]
+  }
+]
+
+instance_group [{ kind: KIND_CPU }]

@@ -1,0 +1,11 @@
+apiVersion: mlops.seldon.io/v1alpha1
+kind: Pipeline
+metadata:
+  name: latency-test
+  namespace: seldon-mesh
+spec:
+  steps:
+    - name: test-caller
+  output:
+    steps:
+    - test-caller

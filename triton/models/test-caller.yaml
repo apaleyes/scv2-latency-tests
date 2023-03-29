@@ -1,0 +1,10 @@
+apiVersion: mlops.seldon.io/v1alpha1
+kind: Model
+metadata:
+  name: test-caller
+spec:
+  # storageUri: "gs://seldon-models/scv2/examples/latency-tests/mlserver/test-caller"
+  storageUri: "/mnt/models/test-caller"
+  requirements:
+  - triton
+  - python

@@ -1,0 +1,10 @@
+apiVersion: mlops.seldon.io/v1alpha1
+kind: Model
+metadata:
+  name: add10
+spec:
+  # storageUri: "gs://seldon-models/scv2/examples/latency-tests/triton/add10"
+  storageUri: "/mnt/models/add10"
+  requirements:
+  - triton
+  - python
