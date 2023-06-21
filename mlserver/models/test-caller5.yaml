@@ -1,0 +1,14 @@
+apiVersion: mlops.seldon.io/v1alpha1
+kind: Model
+metadata:
+  name: test-caller
+spec:
+  storageUri: "gs://seldon-models/scv2/examples/latency-tests/mlserver/test-caller" #"/mnt/models/test-caller"
+  requirements:
+  - mlserver
+  - python
+  parameters:
+  - name: times
+    value: "5"
+  - name: url
+    value: "http://localhost:8080/v2/models/add10_1/infer"
